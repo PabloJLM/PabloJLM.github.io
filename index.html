@@ -3,13 +3,26 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Pablo López Mazariegos</title>
-<meta name="description" content="Portafolio de Pablo José López Mazariegos, sistemas embebidos, ciberseguridad y diseño digital. Tesla Lab, Universidad Galileo.">
+<title>Pablo López Mazariegos, sistemas embebidos</title>
+<meta name="description" content="Portafolio de Pablo José López Mazariegos, sistemas embebidos, ciberseguridad y diseño digital. Tesla Lab, Universidad Galileo, Guatemala.">
+<meta name="theme-color" content="#0e0420">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_LA">
+<meta property="og:site_name" content="Pablo López Mazariegos">
+<meta property="og:title" content="Pablo López Mazariegos, sistemas embebidos">
+<meta property="og:description" content="Firmware, FPGA y diseño digital. Proyectos como Minino Reforjado, Zenith-Core, LV_ESP32 y Tiny Tapeout.">
+<meta property="og:url" content="https://pablojlm.github.io/">
+<meta property="og:image" content="https://pablojlm.github.io/assets/minino.jpg">
+<meta property="og:image:alt" content="Minino Reforjado, placa con forma de camión guatemalteco y pantalla OLED">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:,">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<nav><div class="wrap">
+<a class="skip" href="#proyectos">Saltar al contenido</a>
+
+<nav aria-label="Principal"><div class="wrap">
   <b>Pablo López</b>
   <a href="#sobre-mi" class="hide">Sobre mí</a>
   <a href="#proyectos">Proyectos</a>
@@ -28,20 +41,22 @@
   </div>
 </div></header>
 
+<main>
+
 <section id="sobre-mi"><div class="wrap">
   <h2>Sobre mí</h2>
   <div class="about">
     <div>
       <!-- EDITAR, tu texto -->
-      <p>Soy investigador y programador de sistemas embebidos en Tesla Lab, Universidad Galileo, en Guatemala.</p>
-      <p>[Completar] Cuéntale al visitante qué te mueve, qué haces en el laboratorio y qué estás aprendiendo ahora.</p>
+      <p>Soy estudiante de Ingeniería Mecatrónica y programador de sistemas embebidos en Tesla Lab, Universidad Galileo, en Guatemala. Trabajo con ESP32, STM32, Verilog y FPGA, en C, C++, Python y LabVIEW.</p>
+      <p>Estoy certificado en SolidWorks e Inventor a nivel asociado. Me gusta trabajar en Linux, conozco de forma básica el flujo de Synopsys, Yosys y cocotb, y disfruto hacer aplicaciones propias para mis sistemas embebidos.</p>
       <div class="tags">
         <!-- EDITAR, agrega o quita etiquetas -->
-        <span class="tag">ESP32</span><span class="tag">STM32</span><span class="tag">Verilog</span><span class="tag">FPGA</span><span class="tag">C y C++</span><span class="tag">Python</span><span class="tag">Ciberseguridad</span>
+        <span class="tag">ESP32</span><span class="tag">STM32</span><span class="tag">Verilog</span><span class="tag">FPGA</span><span class="tag">C y C++</span><span class="tag">Python</span><span class="tag">LabVIEW</span><span class="tag">Linux</span><span class="tag">Synopsys</span><span class="tag">Yosys</span><span class="tag">cocotb</span><span class="tag">SolidWorks</span><span class="tag">Inventor</span><span class="tag">Ciberseguridad</span>
       </div>
     </div>
-    <!-- EDITAR, pon tu foto en assets/yo.jpg y cambia el estilo -->
-    <div class="photo" style="background-image:url('assets/yo.jpg')">Tu foto aquí</div>
+    <!-- EDITAR, para poner tu foto cambia este bloque por una etiqueta img con src assets/yo.jpg, alt y loading lazy -->
+    <div class="photo ph">[Completar] Tu foto</div>
   </div>
 </div></section>
 
@@ -49,49 +64,61 @@
   <h2>Proyectos</h2>
   <div class="grid">
 
-    <!-- TARJETA REAL, Minino Reforjado -->
     <article class="card">
-      <div class="img" style="background-image:url('assets/minino.jpg')"></div>
+      <div class="img"><img src="assets/minino.jpg" width="900" height="797" loading="lazy" alt="Minino Reforjado, placa con forma de camión guatemalteco, con pantalla OLED que muestra el logo de Tesla Lab, botones y luces NeoPixel encendidas"></div>
       <div class="body">
         <h3>Minino Reforjado</h3>
-        <p>Dispositivo educativo de seguridad WiFi y Bluetooth con ESP32-C6. Pantalla OLED, botones, NeoPixels y lector SD. Funciona sin PC ni internet.</p>
-        <div class="tags"><span class="tag">ESP32-C6</span><span class="tag">C++</span><span class="tag">GPL v3</span></div>
+        <p>Dispositivo educativo de seguridad WiFi y Bluetooth con ESP32-C6. Pantalla OLED, botones, NeoPixels y lector SD. Funciona sin PC ni internet. Hardware rehecho y firmware propio.</p>
+        <div class="tags"><span class="tag">ESP32-C6</span><span class="tag">C++</span><span class="tag">PlatformIO</span><span class="tag">GPL v3</span></div>
         <div class="links">
-          <a href="https://github.com/PabloJLM/Minino_Reforjado">Repositorio</a>
-          <a href="https://github.com/PabloJLM/Minino_Reforjado/wiki">Wiki</a>
-          <a href="https://github.com/PabloJLM/Minino_Reforjado/releases/latest">Libro y binario</a>
+          <a href="https://github.com/PabloJLM/Minino_Reforjado" aria-label="Repositorio de Minino Reforjado">Repositorio</a>
+          <a href="https://github.com/PabloJLM/Minino_Reforjado/wiki" aria-label="Wiki de Minino Reforjado">Wiki</a>
+          <a href="https://github.com/PabloJLM/Minino_Reforjado/releases/latest" aria-label="Libro y binario de Minino Reforjado">Libro y binario</a>
         </div>
       </div>
     </article>
 
-    <!-- PLANTILLA, copia este bloque completo por cada proyecto -->
     <article class="card">
-      <div class="img" style="background-image:url('assets/proyecto2.jpg')">Foto del proyecto</div>
+      <div class="img ph">[Completar] Foto de Zenith-Core</div>
       <div class="body">
         <h3>Zenith-Core</h3>
-        <p>[Completar] Microcontrolador de 8 bits inspirado en RISC-V, escrito en Verilog para la FPGA Tang Nano 9K.</p>
-        <div class="tags"><span class="tag">Verilog</span><span class="tag">FPGA</span></div>
-        <div class="links"><a href="https://github.com/PabloJLM">Repositorio</a></div>
+        <p>Microcontrolador de 8 bits inspirado en RISC-V, escrito en Verilog para la FPGA Tang Nano 9K. Tiene su propio conjunto de instrucciones, periféricos mapeados en memoria y ensamblador, además de un IDE propio hecho en PyQt5.</p>
+        <div class="tags"><span class="tag">Verilog</span><span class="tag">FPGA</span><span class="tag">Tang Nano 9K</span><span class="tag">PyQt5</span></div>
+        <div class="links"><a href="https://github.com/PabloJLM/Zenith-Core" aria-label="Repositorio de Zenith-Core">Repositorio</a></div>
       </div>
     </article>
 
     <article class="card">
-      <div class="img" style="background-image:url('assets/proyecto3.jpg')">Foto del proyecto</div>
+      <div class="img ph">[Completar] Foto de LV_ESP32</div>
       <div class="body">
         <h3>LV_ESP32</h3>
-        <p>[Completar] Librería de firmware para controlar un ESP32 desde LabVIEW.</p>
-        <div class="tags"><span class="tag">LabVIEW</span><span class="tag">ESP32</span></div>
-        <div class="links"><a href="https://github.com/PabloJLM">Repositorio</a></div>
+        <p>Biblioteca para usar un ESP32, Arduino o STM32 como instrumento de laboratorio desde LabVIEW, pensada para enseñar instrumentación virtual de bajo costo. Se usa en un curso universitario.</p>
+        <div class="tags"><span class="tag">LabVIEW</span><span class="tag">ESP32</span><span class="tag">STM32</span><span class="tag">Python</span></div>
+        <div class="links"><a href="https://github.com/PabloJLM/LV_ESP32" aria-label="Repositorio de LV_ESP32">Repositorio</a></div>
       </div>
     </article>
 
     <article class="card">
-      <div class="img" style="background-image:url('assets/proyecto4.jpg')">Foto del proyecto</div>
+      <div class="img ph">[Completar] Foto de Tiny Tapeout</div>
       <div class="body">
         <h3>Tiny Tapeout</h3>
-        <p>[Completar] Diseños propios para Tiny Tapeout, con un proyecto VGA y una herramienta de imagen a ROM en Verilog.</p>
-        <div class="tags"><span class="tag">Verilog</span><span class="tag">VGA</span></div>
-        <div class="links"><a href="https://github.com/PabloJLM">Repositorio</a></div>
+        <p>Diseños propios enviados al shuttle TTSKY26d, entre ellos un proyecto VGA que dibuja un logo de 64x64 en Verilog y una herramienta que convierte imágenes en ROM. También soy TA voluntario del workshop en Guatemala.</p>
+        <div class="tags"><span class="tag">Verilog</span><span class="tag">VGA</span><span class="tag">Yosys</span></div>
+        <div class="links">
+          <a href="https://github.com/PabloJLM/Reze_TT" aria-label="Proyecto VGA de Tiny Tapeout">Proyecto VGA</a>
+          <a href="https://github.com/PabloJLM/Image-to-Verilog-ROM" aria-label="Herramienta de imagen a ROM en Verilog">Imagen a ROM</a>
+          <a href="https://github.com/PabloJLM/Training-Tiny-Tapeout-" aria-label="Guía de entrenamiento de Tiny Tapeout">Guía</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="img ph">[Completar] Foto de Purple Deck</div>
+      <div class="body">
+        <h3>Purple Deck</h3>
+        <p>Deck táctil sobre la pantalla WT32-SC01-Plus con ESP32-S3. Menú principal con submenús de macros en rejilla 3x3, pantalla de reposo con reloj y notificaciones, Pomodoro y reloj con alarmas.</p>
+        <div class="tags"><span class="tag">ESP32-S3</span><span class="tag">C++</span><span class="tag">LovyanGFX</span></div>
+        <div class="links"><a href="https://github.com/PabloJLM/Purple_Deck" aria-label="Repositorio de Purple Deck">Repositorio</a></div>
       </div>
     </article>
 
@@ -101,20 +128,22 @@
 <section id="galeria"><div class="wrap">
   <h2>Galería</h2>
   <div class="gallery">
-    <!-- EDITAR, una línea por foto, sube las imágenes a assets/ -->
-    <div style="background-image:url('assets/galeria1.jpg')">Foto 1</div>
-    <div style="background-image:url('assets/galeria2.jpg')">Foto 2</div>
-    <div style="background-image:url('assets/galeria3.jpg')">Foto 3</div>
-    <div style="background-image:url('assets/galeria4.jpg')">Foto 4</div>
+    <!-- EDITAR, para cada foto usa figure con una etiqueta img con src, alt y loading lazy, menos de 300 KB -->
+    <div class="ph">[Completar] Foto 1</div>
+    <div class="ph">[Completar] Foto 2</div>
+    <div class="ph">[Completar] Foto 3</div>
+    <div class="ph">[Completar] Foto 4</div>
   </div>
 </div></section>
 
 <section id="contacto"><div class="wrap contact">
   <h2 style="display:inline-block">Contacto</h2>
-  <p>pablo.lopezmazariegos@galileo.edu</p>
+  <p><a href="mailto:pablo.lopezmazariegos@galileo.edu">pablo.lopezmazariegos@galileo.edu</a></p>
   <p><a href="https://github.com/PabloJLM">github.com/PabloJLM</a></p>
   <p><a href="https://www.linkedin.com/in/pablo-lopez-mazariegos-332806240">LinkedIn</a></p>
 </div></section>
+
+</main>
 
 <footer>Pablo José López Mazariegos · Tesla Lab, Universidad Galileo · 2026</footer>
 </body></html>

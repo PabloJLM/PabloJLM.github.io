@@ -5,7 +5,7 @@ Todo lo que hay que cambiar está marcado con comentarios `EDITAR` o con el text
 ## Editar
 1. Abre `index.html` en VS Code.
 2. Cambia los textos y enlaces. Para un proyecto nuevo, copia un bloque `<article class="card">` completo.
-3. Pon tus fotos en la carpeta `assets/` con los nombres que ya usa el HTML, o cambia los nombres en el HTML.
+3. Pon tus fotos en la carpeta `assets/`. Donde dice `[Completar] Foto`, cambia ese bloque por una etiqueta `<img src="assets/nombre.jpg" alt="descripción" loading="lazy">` dentro del mismo contenedor.
 4. Para verlo local, abre `index.html` con doble clic.
 
 ## Publicar en GitHub Pages
